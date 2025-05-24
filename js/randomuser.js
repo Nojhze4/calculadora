@@ -7,6 +7,8 @@ const foto = document.getElementById('foto')
 const nombre = document.getElementById('nombre')
 const correo = document.getElementById('correo')
 const telefono = document.getElementById('telefono')
+const ciudad = document.getElementById('ciudad')
+const pais = document.getElementById('pais')
 
 //Funciones
 //Enlance API https://randomuser.me/api
@@ -21,6 +23,8 @@ const generarUsuario = async () => {
     nombre.textContent = datos.name.first;
     correo.textContent = datos.email;
     telefono.textContent = datos.phone;
+    ciudad.textContent = datos.location.city;
+    pais.textContent = datos.location.country;
 }
 
 //Eventos
